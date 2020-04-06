@@ -50,7 +50,7 @@ def void_last_transaction
 binding.pry
 to_be_void = @last_trans.pop.to_a
 
-=======
+
 to_be_void = @last_trans.pop.to_a.flatten
 
 @total -= to_be_void[1][1] * to_be_void[2][1]
