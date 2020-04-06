@@ -1,9 +1,8 @@
 require 'pry'
 
 class CashRegister
-<<<<<<< HEAD
-attr_accessor :total, :discount :price
-=======
+
+
 attr_accessor :total, :discount
 def initialize(discount = 0)
 @total = 0
@@ -49,13 +48,12 @@ end
 
 def void_last_transaction
 binding.pry
-<<<<<<< HEAD
 to_be_void = @last_trans.pop.to_a
 
 =======
 to_be_void = @last_trans.pop.to_a.flatten
->>>>>>> ada801099581a8a89dc25938deb9b9660127024f
-@total -= to_be_void[1] * to_be_void[2]
+
+@total -= to_be_void[1][1] * to_be_void[2][1]
   
 end
 
