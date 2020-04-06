@@ -47,7 +47,7 @@ def items
 end
 
 def void_last_transaction
-binding.pry
+
 to_be_void = @last_trans.pop.to_a
 
 
