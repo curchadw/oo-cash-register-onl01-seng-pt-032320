@@ -52,7 +52,6 @@ to_be_void = @last_trans.pop.to_a
 
 
 to_be_void = @last_trans.pop.to_a.flatten
-binding.pry
 @total -= to_be_void[1][1] * to_be_void[2][1]
   
 end
